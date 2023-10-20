@@ -3,4 +3,16 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_retrofit">Retrofit</string>
+    <string name="title_mvi">MVI</string>
+    <string name="title_shared_view_model">SharedViewMode</string>
+    <string name="title_viewmodel">ViewModel</string>
+    <string name="title_livedata">LiveData</string>
+    <string name="btn_livedata">前往 LiveData 页面</string>
+    <string name="btn_viewmodel">前往 ViewModel 页面</string>
+    <string name="btn_shared_view_model">共享ViewModel示例</string>
+    <string name="btn_retrofit">Retrofit 示例</string>
+    <string name="btn_retrofit_get_banner">获取Banner数据</string>
+    <string name="btn_mvi">前往 MVI 页面</string>
+    <string name="view">view: %d</string>
 </resources>

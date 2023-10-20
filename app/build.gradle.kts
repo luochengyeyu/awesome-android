@@ -1,15 +1,13 @@
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
 }
 
 android {
-    namespace = "com.luocheng.android"
+    namespace = "com.lcyy.android"
     compileSdk = 34
-
     defaultConfig {
-        applicationId = "com.luocheng.android"
+        applicationId = "com.lcyy.android"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -19,6 +17,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            isDebuggable = true
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -37,7 +38,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -46,6 +46,13 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment.ktx)
     implementation(libs.navigation.ui.ktx)
+    implementation(libs.retrofit)
+    implementation(libs.converter.moshi)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.legacy.support.v4)
+    implementation(libs.moshi.kotlin)
+    implementation(libs.dcc.viewbinding.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)

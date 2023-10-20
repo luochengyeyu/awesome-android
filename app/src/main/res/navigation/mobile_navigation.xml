@@ -7,19 +7,50 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.luocheng.android.ui.home.HomeFragment"
+        android:name="com.lcyy.android.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_page_retrofit"
+            app:destination="@id/page_retrofit" />
+        <action
+            android:id="@+id/action_navigation_home_to_page_shared_view_model"
+            app:destination="@id/page_shared_view_model" />
+        <action
+            android:id="@+id/action_navigation_home_to_page_mvi"
+            app:destination="@id/page_mvi" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.luocheng.android.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/page_viewmodel"
+        android:name="com.lcyy.android.feature.jetpack.ViewModelFragment"
+        android:label="@string/title_viewmodel"
+        tools:layout="@layout/fragment_view_model" />
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.luocheng.android.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/page_livedata"
+        android:name="com.lcyy.android.feature.jetpack.LiveDataFragment"
+        android:label="@string/title_livedata"
+        tools:layout="@layout/fragment_live_data" />
+    <fragment
+        android:id="@+id/page_retrofit"
+        android:name="com.lcyy.android.feature.retrofit.ui.RetrofitFragment"
+        android:label="@string/title_retrofit"
+        tools:layout="@layout/fragment_retrofit" />
+
+    <fragment android:id="@+id/page_shared_view_model"
+        android:name="com.lcyy.android.feature.jetpack.SharedViewModelFragment"
+        android:label="@string/title_shared_view_model"
+        tools:layout="@layout/fragment_shared_view_model">
+        <action
+            android:id="@+id/action_page_shared_view_model_to_page_viewmodel"
+            app:destination="@id/page_viewmodel" />
+        <action
+            android:id="@+id/action_page_shared_view_model_to_page_livedata"
+            app:destination="@id/page_livedata" />
+    </fragment>
+    <fragment
+        android:id="@+id/page_mvi"
+        android:name="com.lcyy.android.feature.mvi.MviFragment"
+        android:label="@string/title_mvi"
+        tools:layout="@layout/fragment_mvi" />
 </navigation>
