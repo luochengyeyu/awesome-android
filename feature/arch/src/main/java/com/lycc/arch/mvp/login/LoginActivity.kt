@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.dylanc.viewbinding.binding
 import com.lycc.arch.R
 import com.lycc.arch.databinding.ActivityLoginBinding
-import com.lycc.arch.toast
+import com.lycc.core.ext.toast
 
 class LoginActivity : AppCompatActivity(R.layout.activity_login), LoginContract.View {
 

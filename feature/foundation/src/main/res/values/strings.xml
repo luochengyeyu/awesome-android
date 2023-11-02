@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">基础</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="home_fragment_label">Home Fragment</string>
+    <string name="launch_mode_fragment_label">LaunchMode Fragment</string>
+    <string name="launch_mode">launchMode</string>
+    <string name="standard">standard</string>
+    <string name="single_top">singleTop</string>
+    <string name="single_task">singleTask</string>
+    <string name="single_instance">singleInstance</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

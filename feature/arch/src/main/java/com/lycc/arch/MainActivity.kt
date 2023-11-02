@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.dylanc.viewbinding.binding
 import com.lycc.arch.databinding.ActivityMainBinding
 import com.lycc.arch.mvp.login.LoginActivity
+import com.lycc.arch.room.ui.RoomActivity
+import com.lycc.core.ext.startActivity
+import com.lycc.core.ext.toast
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private val binding: ActivityMainBinding by binding()
@@ -13,10 +16,13 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
         binding.run {
             btnMvp.setOnClickListener {
-                startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                startActivity<LoginActivity>()
             }
             btnMvvm.setOnClickListener {
                 toast("MVVM")
+            }
+            btnRoom.setOnClickListener {
+                startActivity<RoomActivity>()
             }
         }
     }

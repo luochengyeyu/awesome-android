@@ -1,8 +1,10 @@
+// 自定义插件存储库
 pluginManagement {
     repositories {
         google()
         mavenCentral()
         gradlePluginPortal()
+        maven("https://jitpack.io")
     }
 }
 dependencyResolutionManagement {
@@ -16,5 +18,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "awesome-android"
 include(":app")
-include(":feature:arch")
 include(":core")
+include(":feature:arch")
+include(":library:net")
+include(":feature:foundation")

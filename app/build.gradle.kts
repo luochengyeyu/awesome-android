@@ -38,6 +38,9 @@ android {
 }
 
 dependencies {
+    if(!ModuleCore.isApp){
+        implementation(project(":core"))
+    }
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -53,6 +56,7 @@ dependencies {
     implementation(libs.legacy.support.v4)
     implementation(libs.moshi.kotlin)
     implementation(libs.dcc.viewbinding.ktx)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)

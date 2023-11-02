@@ -15,7 +15,8 @@ navigation-ui-ktx = "2.7.4"
 retrofit2 = "2.9.0"
 kotlinx-coroutines = "1.7.3"
 legacy-support-v4 = "1.0.0"
-dcc-viewbinding = "2.1.0"
+codelocator = "2.0.3"
+room = "2.6.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -35,11 +36,19 @@ kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-cor
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
 legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacy-support-v4" }
 moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version = "1.15.0" }
-dcc-viewbinding-ktx = { group = "com.github.DylanCaiCoding.ViewBindingKTX", name = "viewbinding-ktx", version.ref = "dcc-viewbinding" }
+dcc-viewbinding-ktx = { group = "com.github.DylanCaiCoding.ViewBindingKTX", name = "viewbinding-ktx", version = "2.1.0" }
+logger = { group = "com.orhanobut", name = "logger", version = "2.2.0" }
+codelocator-core = { group = "com.bytedance.tools.codelocator", name = "codelocator-core", version.ref = "codelocator" }
+codelocator-lancet-all = { group = "com.bytedance.tools.codelocator", name = "codelocator-lancet-all", version.ref = "codelocator" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidx-activity-ktx = { group = "androidx.activity", name = "activity-ktx", version = "1.8.0" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version = "1.7.0-alpha06" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "org-jetbrains-kotlin-android" }
 
 [bundles]
-

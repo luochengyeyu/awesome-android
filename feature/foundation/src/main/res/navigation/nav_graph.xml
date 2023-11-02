@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.lcyy.foundation.ui.fragment.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeFragment_to_LaunchModeFragment"
+            app:destination="@id/LaunchModeFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_ActivityResultFragment"
+            app:destination="@id/ActivityResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LaunchModeFragment"
+        android:name="com.lcyy.foundation.ui.fragment.LaunchModeFragment"
+        android:label="@string/launch_mode_fragment_label"
+        tools:layout="@layout/fragment_launch_mode">
+        <action
+            android:id="@+id/action_LaunchModeFragment_to_SingleTaskActivity"
+            app:destination="@id/SingleTaskActivity" />
+        <action
+            android:id="@+id/action_LaunchModeFragment_to_SingleTopActivity"
+            app:destination="@id/SingleTopActivity" />
+        <action
+            android:id="@+id/action_LaunchModeFragment_to_SingleInstanceActivity"
+            app:destination="@id/SingleInstanceActivity" />
+        <action
+            android:id="@+id/action_LaunchModeFragment_to_StandardActivity"
+            app:destination="@id/StandardActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/SingleTopActivity"
+        android:name="com.lcyy.foundation.ui.activity.SingleTopActivity"
+        android:label="activity_single_top"
+        tools:layout="@layout/activity_single_top" />
+    <activity
+        android:id="@+id/SingleTaskActivity"
+        android:name="com.lcyy.foundation.ui.activity.SingleTaskActivity"
+        android:label="activity_single_task"
+        tools:layout="@layout/activity_single_task" />
+    <activity
+        android:id="@+id/SingleInstanceActivity"
+        android:name="com.lcyy.foundation.ui.activity.SingleInstanceActivity"
+        android:label="activity_single_instance"
+        tools:layout="@layout/activity_single_instance" />
+    <activity
+        android:id="@+id/StandardActivity"
+        android:name="com.lcyy.foundation.ui.activity.StandardActivity"
+        android:label="activity_standard"
+        tools:layout="@layout/activity_standard" />
+    <fragment
+        android:id="@+id/ActivityResultFragment"
+        android:name="com.lcyy.foundation.ui.fragment.ActivityResultFragment"
+        android:label="ActivityResult"
+        tools:layout="@layout/fragment_activity_result" />
+</navigation>

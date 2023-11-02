@@ -1,4 +1,4 @@
-package com.lycc.arch
+package com.lycc.core.ext
 
 import android.content.Context
 import android.widget.Toast
