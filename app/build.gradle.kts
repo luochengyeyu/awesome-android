@@ -38,9 +38,9 @@ android {
 }
 
 dependencies {
-    if(!ModuleCore.isApp){
-        implementation(project(":core"))
-    }
+//    if(!ModuleCore.isApp){
+//        implementation(project(":core"))
+//    }
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)

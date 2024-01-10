@@ -19,6 +19,7 @@ dependencyResolutionManagement {
 rootProject.name = "awesome-android"
 include(":app")
 include(":core")
-include(":feature:arch")
 include(":library:net")
+include(":feature:arch")
 include(":feature:foundation")
+include(":feature:ui")
